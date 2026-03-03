@@ -52,6 +52,10 @@ try {
     # LOAD CONFIG
     $config = Get-ValidatedConfig -ConfigPath $ConfigFilePath
     Write-LogInfo "Configuration files loaded"
+
+    if ($null -eq $config) {
+        exit
+    }
     
     # LOAD APP IDS
     $allOktaAppIds = Get-OktaAppIdsFromFile -FilePath $OktaAppsFilePath

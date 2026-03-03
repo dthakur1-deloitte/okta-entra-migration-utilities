@@ -28,7 +28,7 @@ function Test-RequiredFiles {
         $allValid = $false
     }
 
-    Write-Host "All required files validated ..." -ForegroundColor Cyan
+    Write-Host "All required files exists ..." -ForegroundColor Cyan
 
     return $allValid
 }
@@ -40,7 +40,7 @@ function Get-ValidatedConfig {
         $config = Get-Content $ConfigPath -Raw | ConvertFrom-Json
     }
     catch {
-        Write-Host "Invalid config.json format" -ForegroundColor Red
+        Write-Host "Invalid configuration format" -ForegroundColor Red
         Write-LogError "Invalid JSON in config"
         return $null
     }
@@ -51,7 +51,10 @@ function Get-ValidatedConfig {
         "ENTRA_TENANT_ID",
         "ENTRA_CLIENT_ID",
         "ENTRA_CLIENT_SECRET",
-        "CLAIMS_MAPPING_POLICY"
+        "CLAIMS_MAPPING_POLICY",
+        "USER_ACCESS_TOKEN",
+        "LISTENER_POLICY_ID",
+        "USER_FLOW_ID"
     )
 
     $missing = @()
