@@ -1,0 +1,17 @@
+Tenant ID :
+{{TENANT_ID}}
+
+Authorize Endpoint :
+{{AUTHORIZE_ENDPOINT}}
+
+Token Endpoint :
+{{TOKEN_ENDPOINT}}
+
+Application Client ID : 
+{{CLIENT_ID}}
+
+Client Secret :
+{{CLIENT_SECRET}}
+
+Well-Known Endpoint : 
+{{WELLKNOWN_ENDPOINT}}

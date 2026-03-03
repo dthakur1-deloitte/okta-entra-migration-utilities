@@ -1,0 +1,11 @@
+{
+    "OKTA_DOMAIN": "",
+    "OKTA_API_TOKEN": "",
+    "ENTRA_TENANT_ID": "",
+    "ENTRA_CLIENT_ID": "",
+    "ENTRA_CLIENT_SECRET": "",
+    "CLAIMS_MAPPING_POLICY": "",
+    "USER_ACCESS_TOKEN" : "",
+    "LISTENER_POLICY_ID" : "",
+    "USER_FLOW_ID" : ""
+}
