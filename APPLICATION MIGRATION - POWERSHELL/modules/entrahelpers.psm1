@@ -318,14 +318,14 @@ function New-EntraOIDCAppFromOkta {
         Write-Host "Entra Application Created ...." -ForegroundColor Cyan
         Write-LogInfo "Application created"
         
-        Start-Sleep -Seconds 2
+        Start-Sleep -Seconds 5
         
         Write-Host "Attempting to create Service principal Entra ...." -ForegroundColor Cyan
         $servicePrincipal = New-MgServicePrincipal -BodyParameter @{ AppId = $application.AppId } -ErrorAction Stop
         Write-Host "Service Principal Created ...." -ForegroundColor Cyan
         Write-LogInfo "Service principal created"
         
-        Start-Sleep -Seconds 2
+        Start-Sleep -Seconds 5
         
         $secret = $null
         
